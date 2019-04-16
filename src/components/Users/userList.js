@@ -1,7 +1,5 @@
 import React , {Component} from 'react';
 import '../../container/App.scss';
-import  personal from '../../img/PersonalImage.png';
-import logo from '../../img/logo.png';
 import {BrowserRouter ,Route ,Link , Redirect} from 'react-router-dom';
 import ListItem from '../ListItem/listItem';
 import AddProduct from '../AddProduct/addProduct';

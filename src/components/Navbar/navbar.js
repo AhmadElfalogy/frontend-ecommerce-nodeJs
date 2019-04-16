@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "../../container/App.scss";
-import personal from "../../img/PersonalImage.png";
-import logo from "../../img/logo.png";
 import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
 import ListItem from "../ListItem/listItem";
 import AddProduct from "../AddProduct/addProduct";
@@ -123,14 +121,13 @@ class Navbar extends Component {
           </div>
           <div className="header__middle container">
             <a href="#" className="header__logo-box">
-              <img className="header__logo" src={logo} alt="" />
+              
             </a>
             <div className="header__user-options">
               <div className="dropdown">
                 <div className="dropdown__header">
                   <div
                     className="image image--small image--circle"
-                    style={{ backgroundImage: `url(${personal})` }}
                   />
                 </div>
                 <div className="dropdown__body" />
