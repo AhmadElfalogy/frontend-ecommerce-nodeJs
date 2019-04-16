@@ -13,7 +13,6 @@ import LoginForm from '../components/LoginForm/loginForm';
 import UserList from '../components/Users/userList';
 import AllProduct from '../components/AllProducts/allProduct';
 import EditProduct from '../components/EditProduct/editProduct';
-import Loading from '../components/Loading/loading';
 
 class App extends Component {
   render() {
