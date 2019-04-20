@@ -22,21 +22,9 @@ class RegisterForm extends Component {
         this.props.history.push("/userLogin");
       })
       .catch(err => {
-        alert("Registeration Failed");
+        alert("registeration Failed ..Please Try Again");
       });
   };
-
-  //   registerHandler = async e => {
-  //     e.preventDefault();
-  //     const {
-  //       username: { value: username },
-  //       password: { value: password },
-  //       email: { value: email }
-  //     } = e.target.elements;
-  //     console.log(username, password, email);
-  //     const res = await register({ username, password, email });
-  //     alert("you are registers");
-  //   };
 
   render() {
     if (
@@ -47,7 +35,11 @@ class RegisterForm extends Component {
         <>
           <div className="form">
             <div className="add-product container">
-              <form onSubmit={this.registerHandler} className="mx-auto w-50">
+              <form
+                onSubmit={this.registerHandler}
+                className="mx-auto w-50"
+                method="post"
+              >
                 <div className="form-group">
                   <input
                     className="form-control input-block"
@@ -82,8 +74,10 @@ class RegisterForm extends Component {
       );
     } else {
       return (
-        <div className="rl">
-          <h4> You Are Registerd In Our Website</h4>
+        <div className="container">
+          <div className="alert alert-danger">
+            <h4> You Are already signed in</h4>
+          </div>
         </div>
       );
     }

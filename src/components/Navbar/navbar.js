@@ -49,20 +49,16 @@ class Navbar extends Component {
                 </li>
 
                 <li className="list__item">
-                  <a href="#" className="link">
-                    <i className="link__icon fas fa-angle-right" />
-                    <Link className="link" to="/register">
-                      Register
-                    </Link>
-                  </a>
+                  <i className="link__icon fas fa-angle-right" />
+                  <Link className="link" to="/register">
+                    Register
+                  </Link>
                 </li>
                 <li className="list__item">
-                  <a href="#" className="link">
-                    <i className="link__icon fas fa-angle-right" />
-                    <Link className="link" to="/userLogin">
-                      Login
-                    </Link>
-                  </a>
+                  <i className="link__icon fas fa-angle-right" />
+                  <Link className="link" to="/userLogin">
+                    Login
+                  </Link>
                 </li>
 
                 <li className="list__item">
@@ -120,15 +116,11 @@ class Navbar extends Component {
             </div>
           </div>
           <div className="header__middle container">
-            <a href="#" className="header__logo-box">
-              
-            </a>
+            <a href="#" className="header__logo-box" />
             <div className="header__user-options">
               <div className="dropdown">
                 <div className="dropdown__header">
-                  <div
-                    className="image image--small image--circle"
-                  />
+                  <div className="image image--small image--circle" />
                 </div>
                 <div className="dropdown__body" />
               </div>
@@ -200,12 +192,8 @@ class Navbar extends Component {
           </div>
           {/* <!-- lower header --> */}
           <div className="header__lower container">
-            {/* <!-- navigation --> */}
-
             <nav className="nav">
               <ul className="nav__items list list--hr">
-                {/* <!-- items --> */}
-
                 <li className="nav__item dropdown ">
                   {/* <!-- title --> */}
                   <a className="nav__link dropdown__header" href="#">
@@ -228,11 +216,6 @@ class Navbar extends Component {
                   </div>
                 </li>
 
-                <li className="nav__item">
-                  <Link className="nav__link" to="/usersList">
-                    Users
-                  </Link>
-                </li>
                 <li className="nav__item">
                   <Link className="nav__link" to="/allproduct">
                     Products

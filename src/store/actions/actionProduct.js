@@ -65,7 +65,6 @@ export const GettAllProduct = () => {
 export const GettAllProductFromOneUser = id => {
   return dispatch => {
     axios.get(`${baseUrl}/users/${id}`).then(res => {
-      // console.log(res.data);
       dispatch(getAllProductFromOneUserToState(id, res.data));
     });
   };
@@ -76,14 +75,12 @@ export const addProduct = product => {
     product.userId = localStorage.getItem("userid");
     return axios.post(`${baseUrl}/products/`, product).then(res => {
       dispatch(addProductToState(product));
-      // alert("Added Successfuly");
     });
   };
 };
 
 export const deleteProduct = id => {
   return dispatch => {
-    // console.log(id)
     axios.delete(`${baseUrl}/products/${id}`).then(res => {
       dispatch(deleteProductToState(id));
     });
@@ -92,23 +89,18 @@ export const deleteProduct = id => {
 
 export const detailsProduct = id => {
   return dispatch => {
-    // console.log(id)
     axios.get(`${baseUrl}/products/${id}`).then(res => {
       dispatch(detailsProductToState(id, res.data));
-      // console.log(res.data)
     });
   };
 };
 
 export const updateProduct = (id, productUpdated) => {
   return dispatch => {
-    // console.log(id)
     return axios
       .patch(`${baseUrl}/products/${id}`, productUpdated)
       .then(res => {
         dispatch(updateProductToState(id, productUpdated));
-        // console.log(productUpdated)
-        // alert("Updated Successfuly");
       });
   };
 };

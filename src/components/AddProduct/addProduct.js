@@ -40,8 +40,8 @@ class AddProduct extends Component {
       localStorage.getItem("useris") === null
     ) {
       return (
-        <div className="rl">
-          <h4>Must be Register or Login in our Ecommerce Website :)</h4>
+        <div className="alert alert-danger">
+          <h4>Please log in </h4>
         </div>
       );
     } else {

@@ -14,20 +14,20 @@ class AllProduct extends Component {
       <>
         <div className="container">
           <Category />
-          <section class="item-listing">
-            <div class="item-listing__tools">
-              <select class="form-control" name="" id="">
+          <section className="item-listing">
+            <div className="item-listing__tools">
+              <select className="form-control" name="" id="">
                 <option value="1">Featured</option>
                 <option value="2">Price low to high</option>
                 <option value="3">Price high to low</option>
                 <option value="4">Name</option>
               </select>
-              <a class="action-btn" href="#">
-                <i class="fas fa-plus" />
+              <a className="action-btn" href="#">
+                <i className="fas fa-plus" />
               </a>
             </div>
             <div
-              class="item-listing__items item-listing--3items"
+              className="item-listing__items item-listing--3items"
               style={{ width: "100%" }}
             >
               {this.props.products.map(product => {

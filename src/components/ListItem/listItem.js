@@ -17,7 +17,7 @@ export class ListItem extends Component {
     render(){
         if(localStorage.getItem('token')===null&& localStorage.getItem('useris')===null)
         {
-            return(<div className="rl"><h4>Must be Register or Login in our Ecommerce Website :)</h4></div>)
+            return(<div className="alert alert-danger"><h4>Please Login</h4></div>)
         }
         else{
         return(

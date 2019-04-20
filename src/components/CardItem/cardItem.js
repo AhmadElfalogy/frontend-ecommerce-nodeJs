@@ -27,14 +27,12 @@ class CardItem extends Component {
           <h4>{this.props.productName}</h4>
           <h4>{this.props.price}</h4>
           <h4>{this.props.category}</h4>
-          <h4>
-            <span>Description :</span>
-          </h4>
+
           <p> {this.props.description}</p>
           <div className="flex-row">
             <div>
               <h4>
-                <span>price after sale :</span>
+                <span>Final Price</span>
                 {this.props.isOnSale === null ? (
                   <span>${this.props.price}</span>
                 ) : (
